@@ -1,0 +1,503 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}{
+    \item{$\ast$ \vspace{-4pt}}
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubData}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular}{l l}
+     \textbf{\small #1} \textit{\small#2} \\
+     \textbf{\small #3} \textit{\small #4} \\ 
+    \end{tabular}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & {\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Mahmudul Hassan} \\ \vspace{1pt}
+    \href{https://www.mahmudulhassan.com/}{
+    \underline{www.MahmudulHassan.com}} ~ \\ \vspace{1pt}
+    206 Eagle Heights, Apt. J, Madison, WI-53705 \\ \vspace{1pt}
+    \small \raisebox{0\height}\faPhone\ +1-513-208-1961 ~ \href{mailto:mhassan22@wisc.edu}{\raisebox{0\height}\faEnvelope\  {mhassan22@wisc.edu}} ~ 
+    \href{https://www.linkedin.com/in/mahmudul-hassan-2828a7162/}{\raisebox{0\height}\faLinkedin\ {Mahmudul Hassan}}  ~
+    \href{https://www.researchgate.net/profile/Mahmudul_Hassan5}{\raisebox{0\height}\faResearchgate\ {Mahmudul Hassan}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+      {University of Wisconsin -  Madison}{Madison, Wisconsin}
+      {Ph.D in Mechanical Engineering}{Jan. 2022 -- Present}
+      \resumeSubData
+      {CGPA: }{4.00/4.00}
+      {Thesis: }{Investigation on the Laser surface polishing using variation of beam shape and other processing parameters}
+   
+    \resumeSubheading
+      {Miami University}{Oxford, Ohio}
+      {Master of Science in Mechanical Engineering}{Jan. 2020 -- Jan 2022}
+      \resumeSubData
+      {CGPA: }{3.75/4.00}
+      {Thesis: } {\href{http://rave.ohiolink.edu/etdc/view?acc_num=miami1639421576689923} 
+                {\begin{tabular}[t]{ l } 
+                Numerical Investigation into The Cutting Forces, Chip Formation Mechanism, and Burr Formation During Slot  \\ 
+                 Milling of Laminated and 3d Printed CFRP Composites   
+                \end{tabular}}}
+   
+    \resumeSubheading
+      {Bangladesh University of Engineering and Technology}{Dhaka, Bangladesh}
+      {Bachelor of Science in Mechanical Engineering}{Feb. 2015 -- Apr. 2019}
+      \resumeSubData
+      {CGPA: }{3.50/4.00 {  [3.84/4.00 (Sr. Year)]}}
+      {Thesis: }{Study of Erosion Wear by Impinging Granular Particles on Different Materials}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORKS-------
+\section{RELEVANT COURSEWORKS}
+ \resumeSubHeadingListStart
+\resumeSubData
+      {Graduate: }{\hskip1.0cm\begin{tabular}[t]{l}
+        Finite Element Analysis, Additive Manufacturing, Fracture Mechanics, Welding Metallurgy,\\Metal Casting, Computational Methods and ML, Chemical Engineering Thermodynamics, State Variables
+      \end{tabular}}
+      {Undergraduate: }{\begin{tabular}[t]{l}
+        Solid Mechanics, Mechanics of Machinery, Machine Design, Production Processes, Machine Tools,\\ Fluid Mechanics, Thermodynamics, Heat and Mass Transfer, Automobile Engineering, Control Systems
+     \end{tabular}}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: MATLAB, Python, Shell, Arduino, Octave, C/C++, FORTRAN, LaTex, Swift} \\
+     \textbf{Design and Simulations}{: ABAQUS, Inventor, SolidWorks, AutoCad,  ANSYS-Fluent} \\
+     \textbf{Manufacturing and Machining}{: Milling, Turning, 3D Printing, Casting, Forging, CNC Machining} \\
+     \textbf{Computing and Frameworks}{: Automation Studio, Docker, LabView, Fritzing, HTRI-ExchangerSuit, Linux, Git} \\
+     \textbf{Scientific Device}{:  Alicona, CMM, Induction Furnace, Haas CNC, Microcontroller} \\
+     \textbf{Developer Tools}{: Office Suit, Photoshop, xCode-App Developer} \\
+     
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{RESEARCH EXPERIENCE}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University of Wisconsin-Madison}{Jan. 2022 -- Present}
+      {Graduate Research Student, Laser-Assisted Multi-Scale Manufacturing Laboratory (LAMSML)}{Madison, Wisconsin}
+      \resumeItemListStart
+        \resumeItem{\textbf{X-ray Study of Laser Surface Polishing Dynamics: } In-situ high-speed high-intensity X-ray imaging was performed using the Advanced Photon Source, Argonne National Laboratory, using the 32-ID-B beamline.}
+         \begin{itemize}
+            \item[$\ast$] Analyzed x-ray images for key-hole movement.
+            \item[$\ast$] Processed the sample for cross-sectional analysis.
+            \item[$\ast$] Investigated the surface polishing and meltpool dynamics using Alicona.
+         \end{itemize}
+        \resumeItem{\textbf{Developing a 3kW Laser System to Analyse Beam Parametric Effects on Polishing: } Building a laser system capable of changing beam shape and heat affected areas to find effects on the surfacing results.}
+         \begin{itemize}
+            \item[$\ast$] Design and developments of one off parts specific to the system.
+            \item[$\ast$] Designed the heat extraction method from the system.
+         \end{itemize}         
+      \resumeItemListEnd
+    \resumeSubheading
+      {Miami University}{Jan. 2020 -- Dec. 2021}
+      {Graduate Research Student, Laboratory for Advanced Manufacturing Processes (LAMP)}{Oxford, Ohio}
+      \resumeItemListStart
+        \resumeItem{\textbf{Numerical Study of Machining of Laminated CFRP Composites: }Developed a novel model to analyse the effects of critical parameters of slot milling of laminated CFRP composites.}
+         \begin{itemize}
+            \item[$\ast$] Theoretical model developed in ABAQUS to analyse slot milling operation of laminated CFRP composites.
+            \item[$\ast$] Analyzed the surface topology and chip morphology and comparing with experimental results.
+            \item[$\ast$] Investigated the cutting forces and resulting stresses to relate with critical parameters and resulting thermal displacements and effects have been analysed.
+            \item[$\ast$] The feasibility of different failure criteria in simulating reality has been assessed.
+            \item[$\ast$] Relation have been established between critical parameters against material removal rate (MRR) and stresses.
+         \end{itemize}
+         
+        \resumeItem{\textbf{Theoretical Model Development for Machining of 3D Printed CFRP Composites: }Generating an admissible and novel model to analyse the effects of change of process parameters on AM CFRP composites.}
+         \begin{itemize}
+            \item[$\ast$] Developing a model in ABAQUS to simulate AM CFRP composites with pertinent properties.
+            \item[$\ast$] Applying user subroutines to properly represent the appropriate failure criterion.
+            \item[$\ast$] Investigating the cutting forces and resulting stresses and relating them with process parameters and relating MRR with reactions forces.
+         \end{itemize}
+         
+        \resumeItem{\textbf{Simulation of Turning of Copper: }Numerical model developed using combined Eulerian-Lagrangian (CEL) approach to analyze effects of cutting parameters.}
+         \begin{itemize}
+            \item[$\ast$] CEL model with adaptive mesh developed in ABAQUS. 
+            \item[$\ast$] Analyzing relation between critical parameters against material removal rate (MRR) and stresses.
+            \item[$\ast$] Investigating the effects of turning on chip formation and establishing relation between cutting parameters and turning.
+         \end{itemize}         
+         
+        \resumeItem{\textbf{Novel Research on Bandsaw Blade Development: }Conducted a thorough review to develop bandsaw blades for MK Morse industries.}
+         \begin{itemize}
+            \item[$\ast$] Analysed existing works to develop a novel bandsaw design and outlined ways to develop a realistic theoretical model
+            \item[$\ast$] Conducted research on the cutting performance of bandsaw blades and related that to tool wear and performance.
+         \end{itemize}
+         
+        \resumeItem{\textbf{Post Processing for Metal Additive Manufacturing: }Represented the existing ways to process the products that are 3D printed}
+         \begin{itemize}
+            \item[$\ast$] Scoured resources to present existing ways to handle anomaly in the surface of metal AM products. 
+            \item[$\ast$] Suggested future research in this area to ensure proper development of post processing techniques.
+         \end{itemize}
+
+      \resumeItemListEnd
+%\vspace{1pt}
+    \resumeSubheading
+      {Bangladesh University of Engineering and Technology}{May. 2018 -- Apr. 2019}
+      {Undergraduate Research Student}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{\textbf{Study of Erosion Wear by Granular Particles on Materials: }Developed a test rig to investigate the erosion due to wear of metals under severe frictional condition when carrying granular particles.}
+         \begin{itemize}
+            \item[$\ast$] Designed and fabricated setup required to provide high impact velocity to granular particles.
+            \item[$\ast$] Measured the amount of wear incurred with the changes of angles and velocities of impact.
+            \item[$\ast$] Plotted the changes for different conditions and mapped out relations with their innate properties.
+         \end{itemize}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%----------PUBLICATIONS---------
+\section{PUBLICATIONS}
+ \resumeItemListStart
+                \resumeItem{P Faue, L Rathmann, M Möller, \textbf{Mahmudul Hassan}, S J Clark, K Fezzaa, K Klingbeil, B Richter, J Volpp, T Radel, F E Pfefferkorn,  \textit{"High-speed X-ray study of process dynamics caused by surface features during continuous-wave laser polishing"}, CIRP Annals, \href{https://doi.org/10.1016/j.cirp.2023.04.026}{https://doi.org/10.1016/j.cirp.2023.04.026}}
+                \resumeItem{\textbf{Mahmudul Hassan}, Sk Md Alimuzzaman, Jeff Ma, M. P. Jahan, \textit{"A Comparative Numerical Investigation on Machining of Laminated and 3D Printed CFRP Composites"}, Proceedings of the ASME 2022-International Mechanical Engineering Congress and Exposition (IMECE-2022), \href{https://doi.org/10.1115/IMECE2022-95257}{https://doi.org/10.1115/IMECE2022-95257}}
+                \resumeItem{\textbf{Mahmudul Hassan}, Jeff Ma, M. P. Jahan,, \textit{"Numerical modeling and simulation of machining of 3D printed CFRP composite"},  Manufacturing Letters, \href{ https://doi.org/10.1016/j.mfglet.2022.07.055}{doi.org/10.1016/j.mfglet.2022.07.055}}
+                \resumeItem{\textbf{Md Mahmudul Hassan}, Jeff Ma, M. P. Jahan, \textit{"Numerical Investigation Into the Cutting Forces, Chip Formation Mechanism, and Burr Formation During Slot Milling of Laminated CFRP Composites"}, Proceedings of the ASME 2021-International Mechanical Engineering Congress and Exposition (IMECE-2021), \href{https://doi.org/10.1115/IMECE2021-73310}{ doi.org/10.1115/IMECE2021-73310}}
+                \resumeItem{N. M. Cococcetta, M. P. Jahan, J. Schoop, J. Ma, D. Pearl, \textbf{Md Mahmudul Hassan}, \textit{"Sustainable Post-Processing of 3D Printed Thermoplastic CFRP Composites Using Cryogenic Machining"},  Journal of Manufacturing Processes, \href{ http://dx.doi.org/10.1016/j.jmapro.2021.05.054}{doi.org/10.1016/j.jmapro.2021.05.054}}
+                \resumeItem{Patrick Faue, Lewin Rathman, Marius Möller, \textbf{Mahmudul Hassan}, Samuel J. Clark, Kamel Fezzaa, Kevin Klingbeil, Brodan Richter, Jörg Volpp, Tim Radel, Frank E. Pfefferkorn, \textit{"High-speed x-ray study of process dynamics caused by surface features during continuous-wave laser polishing"},  CIRP Annals Manufacturing Technology [Submitted]}
+                \resumeItem{\textbf{Md Mahmudul Hassan}, G. Fetter, M. P. Jahan, S. Rakurty, N. Rangasamy \textit{"A Novel Review on Bandsaw Blade Development"}, For MK Morse Industries [Under Preperation, To be submitted in Summer]}
+                \resumeItem{\textbf{Md Mahmudul Hassan}, M. P. Jahan, \textit{"Post Processing Processes for Metal Additive Manufacturing"} [Under Preparation, To be submitted in Summer]}
+                \resumeItem{\textbf{Md Mahmudul Hassan}, Jeff Ma, M. P. Jahan, \textit{"Assessment of the Effect of Microgrooved Cutting Tools on Dislocation Density and Grain Size Evolution in Turning of OFHC Copper Using CEL FEM"}, [Under Preparation]}
+                \vspace{-5pt}
+            \resumeItemListEnd
+\vspace{-6pt}
+
+%-----------TEACHING EXPERIENCE-----------
+\section{TEACHING EXPERIENCE}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {University Wisconsin-Madison}{Jan. 2022 -- Present}
+      {Graduate Teaching Assistant}{Madison, Wisconsin}
+      \resumeItemListStart
+        \resumeItem{\textbf{ME 311 - Manufacturing: Metals and Automation: }A senior level course which is an overview of techniques for producing metal components, how to design parts to make them easier to produce using these techniques, and ways for boosting production. Automation, control, and metrology in manufacturing for better component quality, efficiency, and safety. engineering economics to calculate the cost of producing a component}
+         \begin{itemize}
+            \item[$\ast$] Introduce the students with different types of manufacturing through lab sessions.
+            \item[$\ast$] Designing assignments, quizzes, mid term and final exams and grading.
+            \item[$\ast$] Assisting students with the understanding of course concepts, assignments, homeworks, and quizzes.
+            \item[$\ast$] Helping students with Automation Studio, Ladder diagrams for lab sessions.
+         \end{itemize}
+     \resumeItemListEnd
+         
+  \resumeSubheading
+      {Miami University}{May. 2020 -- Dec. 2021}
+      {Graduate Teaching Assistant}{Oxford, Ohio}
+      \resumeItemListStart
+        \resumeItem{\textbf{MME 412/512 - Advanced Mechanics of Materials: }A combined undergraduate/graduate level course that covers the concepts of 3D stress-strain , principal stress, yield and failure criteria, stresses in thin and thick-walled structures, beam deflection, column, buckling, composite materials, shear flow, finite element method to determine deflection and stress}
+         \begin{itemize}
+            \item[$\ast$] Designing assignments, quizzes, mid term and final exams.
+            \item[$\ast$] Assisting students with the understanding of course concepts, assignments, homeworks, and quizzes.
+            \item[$\ast$] Helping students in MATLAB for computational assignments.
+            \item[$\ast$] Grading homeworks, quizzes, assignments and exams.
+         \end{itemize}
+                 \resumeItem{\textbf{MME 231 - Manufacturing Processes: }An machine shop based course that introduces to a  wide  variety  of  manufacturing  processes  with  emphasis  on  process  modeling  and  laboratory measurement of process conditions and product variables. Consideration of relations among material properties, process settings, tooling features, and product attributes. Design and implementation of a process for manufacture of a given component. }
+         \begin{itemize}
+            \item[$\ast$] Taking lab sessions and give the students hands on experiences on different machining processes like, Rolling, 3D Modelling, 3D Printing, Casting, Drilling and more.
+            \item[$\ast$] Assisting students with the understanding of course concepts, assignments, homeworks, and quizzes.
+            \item[$\ast$] Grading homeworks, quizzes, assignments and exams.
+         \end{itemize}
+         \resumeItem{\textbf{MME 201 - Modeling and Design in Engineering: }An undergraduate level course that covers the concepts CAD knowledge and design process methodologies, interpretation and development of solid models, drawings, dimensions, and tolerances in the context of engineering design processes, mathematical models of a design and DFMEA analysis}
+         \begin{itemize}
+            \item[$\ast$] Designing lectures and making lecture videos.
+            \item[$\ast$] Assisting students with the understanding of course concepts, assignments, homeworks, and quizzes.
+            \item[$\ast$] Helping students in AutoCAD Inventor 3D modeling environment for projects.
+            \item[$\ast$] Grading homeworks, quizzes, assignments and exams.
+         \end{itemize}
+         %\vspace{-16pt}
+         \resumeItem{\textbf{MME 411 - Machine and Tool Design: } An undergraduate course that covers procedures and engineering analyses to design machine components, tools, and machines to satisfy given needs and obtaining solutions to closed and open-ended problems through the use of different theories}
+         \begin{itemize}
+            \item[$\ast$] Grading Quizzes, Projects, Exams.
+         \end{itemize}
+         
+         \resumeItem{\textbf{MME 211 - Static Modeling of Mechanical Systems: }An undergraduate course that covers the concepts of introductory mechanics, theoretical study and application of the mechanics of rigid bodies in equilibrium}
+         \begin{itemize}
+            \item[$\ast$] Proctoring exam.
+         \end{itemize}
+         
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------INDUSTRY EXPERIENCE-----------
+\section{INDUSTRY EXPERIENCE}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Rahimafrooz Batteries Limited}{Oct. 2018 -- Nov. 2018}
+      {Industrial Trainee}{Savar, Bangladesh}
+         \begin{itemize}
+            \item[$\ast$] Trained on lead-acid battery manufacturing, factory operations, maintenance and quality assurance. 
+            \vspace{-4pt}
+            \item[$\ast$] Dealt with the waste lead, water and air recycling plant.
+            \vspace{-4pt}
+            \item[$\ast$] Analysed the supply chain and ways of improvement.
+            \vspace{-4pt}
+            \item[$\ast$] Presented and reported a well documented study of the lead acid battery plant.
+         \end{itemize}
+    
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Modeling of Non Ideal LLE Systems and Application of Raoult's Law} $|$ \emph{MATLAB, MS Excel}}{\textit{May 2021}}
+          \resumeItemListStart
+            \resumeItem{Used MATLAB to simulate ideal solution behaviour of several fluid systems using Raoult's law.}
+            \resumeItem{Used Microsoft Excel to analyse the amount of offset for Raoul's law prediction from non ideal reference data.}
+            \resumeItem{Predicted the usability of Raoult's law for non ideal LLE systems used in separation processes from thorough analysis.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+
+      \resumeProjectHeading
+          {\textbf{Assessment of the Applicability of Different Cubic EOS for Industrial Fluids} $|$ \emph{MATLAB, MS Excel}}{\textit{Mar. 2021}}
+          \resumeItemListStart
+            \resumeItem{Used MATLAB to simulate the VdW, SRK, and PR cubic equations of state for predicting VLE.}
+            \resumeItem{Using Excel, compared VdW, SRK, and PR EOS to predict Methanol and Nitrogen Trifluoride systems of VLE.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+
+      \resumeProjectHeading
+          {\textbf{Numerical Model Development and Analysis of Composite Leaf Spring} $|$ \emph{Inventor, MATLAB}}{\textit{Dec. 2020}}
+          \resumeItemListStart
+            \resumeItem{Used AutoCAD Inventor to design a realistic composite leaf spring.}
+            \resumeItem{Used MATLAB to predict failure point and for static loading and visually present the bending.}
+            \resumeItem{Predicted the number of composite layers needed to properly replace traditional leaf springs.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+
+    
+      \resumeProjectHeading
+          {\textbf{Finite Difference Simulation of a Complex Fin Array Structure} $|$ \emph{MATLAB, MS Excel}}{\textit{Nov. 2020}}
+          \resumeItemListStart
+            \resumeItem{Used Microsoft Excel to simulate the heat transfer from an array of complex shaped fins.}
+            \resumeItem{Predicted temperature distribution along the length of every fin in the array system.}
+            \resumeItem{Predicted heat transfer from each fin and the entire fin array.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+          
+      \resumeProjectHeading
+          {\textbf{Study of Stresses of Multiple Layer Pressure Vessel Assembly by Simulation} $|$ \emph{MATLAB}}{\textit{May 2020}}
+          \resumeItemListStart
+            \resumeItem{Developed an analytical method for analyzing dynamic hoop stresses for layered assembly of pipes.}
+            \resumeItem{Using MATLAB, developed a model to predict hoop stresses along the different layers and failure points for static and transient conditions.}
+            \resumeItem{Validated the model using available experimental data.}
+            \resumeItem{Assessed the usability of the by comparing with Lagrangian method.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+          
+      \resumeProjectHeading
+          {\textbf{Stabilization of Chaotic Cart and Two Degree Fulcrum Assembly} $|$ \emph{MATLAB, LabView}}{\textit{Apr. 2020}}
+          \resumeItemListStart
+            \resumeItem{Established conditions and set up parameter space for different regimes of motion.}
+            \resumeItem{Ran simulations in MATLAB to predict displacement and angular velocity of the system with time in various regimes.}
+            \resumeItem{Differential equations were solved and the results from MATLAB were used in LabView to construct phase portrait and time delay graphs.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+          
+     
+     \resumeProjectHeading
+          {\textbf{Design and Fabrication of a Double Pipe Heat Exchanger} $|$ \emph{SolidWorks, MATLAB}}{\textit{Sep. 2017}}
+          \resumeItemListStart
+            \resumeItem{Analyzed the critical parameters of a counter flow double pipe heat exchanger using MATLAB.}
+            \resumeItem{Designed a sample counter flow double pipe heat exchanger using the critical analysis in SolidWorks.}
+            \resumeItem{Fabricated the prototype heat exchanger and pressures tested before analysisng the feasibility of implementation.}
+        \vspace{-14pt}
+        \resumeItemListEnd 
+        
+        \resumeProjectHeading
+          {\textbf{Design and fabrication of an Automated workout system with heart rate monitor} $|$ \emph{Arduino}}{\textit{May 2017}}
+          \resumeItemListStart
+            \resumeItem{Used Micro controller to process data from sensors by designing appropriate circuitry }
+            \resumeItem{Designed a prototype model using SolidWorks and conducted stress analysis on critical points.}
+            \resumeItem{Fabricated the prototype and presented them for public review}
+          \resumeItemListEnd 
+          
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------ACADEMIC ACHIEVEMENTS---------------
+\section{ACADEMIC ACHIEVEMENTS}
+            \resumeItemListStart
+                \resumeItem{Summer Graduate Research Scholarship, 2020 and 2021, Miami University.}
+                \vspace{-6pt}
+                \resumeItem{Dean's Listed for Exceptional Academic Performance, 2019, Bangladesh University of Engineering and Technology.}
+                \vspace{-5pt}
+                \resumeItem{Bangladesh Education Board Technical Scholarship, 2015 to 2019, Dhaka Education Board and Bangladesh University of Engineering and Technology.}
+                \vspace{-5pt}
+                \resumeItem{University Stipend for Outstanding Performance, 2017, Bangladesh University of Engineering and Technology}
+                
+            \resumeItemListEnd
+\vspace{-8pt}
+
+
+%-----------LEADERSHIP AND EXTRACURRICULAR EXPERIENCE---------------
+\section{LEADERSHIP AND EXTRACURRICULAR EXPERIENCE}
+
+            \resumeItemListStart
+                \resumeItem{\textbf{President,} Bangladesh Student Association-UW Madison (BSO-UW Madison), 2023}
+                \vspace{-5pt}
+                \resumeItem{\textbf{Secretary,} Graduate Student Association (GSA), Miami University, 2021}
+                \vspace{-5pt}
+                \resumeItem{\textbf{Vice President,} Bangladeshi Students' Association (BSA), Miami University, 2021}
+                \vspace{-5pt}
+                \resumeItem{\textbf{Executive Member,} Media Affairs Committee - Graduate Student Association (GSA), Miami University, 2020}
+                \vspace{-5pt}
+                \resumeItem{\textbf{Member,} Mechanical Engineers’ Association,(MEA-BUET) and Young Engineers Society (YES), BUET Automobile Club (BAC), BUET Photographic Society (BUET-PS), 2015-2019}
+            \resumeItemListEnd
+\vspace{-9pt}            
+                
+%-----------AWARDS---------------
+\section{AWARDS}
+
+            \resumeItemListStart
+                \resumeItem{\textbf{“NSF Travel Grant” } award from National Science Foundation, 2022}
+                \vspace{-4pt}
+                \resumeItem{\textbf{Certified Supply Chain Analyst (CSCA)} degree and scholarship awarded form ISCEA-PTAK, 2019}
+                \vspace{-4pt}
+                \resumeItem{\textbf{Winner,} second runner up, “First Mechathon of Bangladesh-2018”}
+                \vspace{-4pt}
+                \resumeItem{\textbf{Third Round Competitor} “Pioneros” and “HULT Prize BUET”, 2017}
+            \resumeItemListEnd
+
+
+\end{document}
